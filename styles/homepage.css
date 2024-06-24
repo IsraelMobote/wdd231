@@ -88,7 +88,13 @@ body h2 {
 
 }
 
-.section3 p {
+.section3 .sectionNav li:hover, .section3 .sectionNav li.active {
+    font-size: 1.3rem;
+    background-color: blue;
+    color: white;
+}
+
+.section3 div p {
     width: 90%;
     color: rgb(233, 225, 225);
     background-color: brown;
@@ -96,7 +102,12 @@ body h2 {
     padding: 10px 0;
     text-align: center;
     font-weight: 800;
-    
+}
+
+.section3 div p.notCompleted {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 /*---------------------- footer ---------------------*/

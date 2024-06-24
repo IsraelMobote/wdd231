@@ -87,3 +87,90 @@ const courses = [
         completed: false
     }
 ]
+
+const coursesDiv =  document.querySelector('#courseList');
+
+function getCourses(list) {
+
+    coursesDiv.innerHTML = '';
+    list.forEach(course => {
+        const paragraph =  document.createElement('p');
+        paragraph.textContent = `${course.subject} ${course.number}`;
+
+        if (course.completed === false) {
+            paragraph.classList.toggle("notCompleted");
+        }
+
+        coursesDiv.append(paragraph);
+    });
+}
+
+function getCSEcourses() {
+    const newList = courses.filter(course => course.subject === 'CSE');
+    getCourses(newList);
+}
+
+function getWDDcourses() {
+    const newList = courses.filter(course => course.subject === 'WDD');
+    getCourses(newList);
+}
+
+
+// I used 0 and 1 to represent the state of the courses button in the webpage,
+// 0 means inactive while 1 means active.
+let activeForAll = 0;
+let activeForCSE = 0;
+let activeForWDD = 0;
+
+document.querySelector('#onlyCSE').addEventListener('click', function() {
+    getCSEcourses();
+
+    document.querySelector('#onlyCSE').classList.toggle('active');
+    activeForCSE = 1;
+    if (activeForAll == 1) {
+        document.querySelector('#showAll').classList.toggle('active');
+        activeForAll = 0;
+    }
+
+    if (activeForWDD == 1) {
+        document.querySelector('#onlyWDD').classList.toggle('active');
+        activeForWDD = 0;
+    }
+    
+});
+
+
+document.querySelector('#onlyWDD').addEventListener('click', function() {
+    getWDDcourses();
+
+    document.querySelector('#onlyWDD').classList.toggle('active');
+    activeForWDD = 1;
+    if (activeForAll == 1) {
+        document.querySelector('#showAll').classList.toggle('active');
+        activeForAll = 0;
+    }
+
+    if (activeForCSE == 1) {
+        document.querySelector('#onlyCSE').classList.toggle('active');
+        activeForCSE = 0;
+    }
+    
+});
+
+document.querySelector('#showAll').addEventListener('click', function() {
+    getCourses(courses);
+
+    document.querySelector('#showAll').classList.toggle('active');
+    activeForAll = 1;
+    if (activeForCSE == 1) {
+        document.querySelector('#onlyCSE').classList.toggle('active');
+        activeForCSE = 0;
+    }
+
+    if (activeForWDD == 1) {
+        document.querySelector('#onlyWDD').classList.toggle('active');
+        activeForWDD = 0;
+    }
+});
+
+getCourses(courses);
