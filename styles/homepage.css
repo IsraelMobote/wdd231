@@ -8,7 +8,7 @@ header {
    justify-content: space-evenly;
    color: antiquewhite;
    background-color: #49149c;
-   padding: 20px 0;
+   padding: 20px 3rem 20px 0;
 }
 
 h1 {
@@ -16,11 +16,16 @@ h1 {
     align-self: center;
 }
 
-header #menuBar {
+header #menuBar::before {
+    content: "≡";
     font-size: 3rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+header #menuBar.show::before {
+    content: "✖";
 }
 
 #navi {
@@ -116,4 +121,10 @@ footer {
     text-align: center;
     padding: 2rem 0;
     background-color: #49149c;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1px 0;
 }
