@@ -104,12 +104,12 @@ const creditAll = [2,2,2,2,2,2];
 const creditCSE = [2,2,2];
 const number = creditAll.reduce(myfun);
 const csenumber = creditCSE.reduce(myfun);
-let finalNum = number;
     
 function myfun(total, numb) {
     return total + numb;
 };
 
+let finalNum = number;
 
 const coursesDiv =  document.querySelector('#courseList');
 
