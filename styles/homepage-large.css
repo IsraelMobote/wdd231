@@ -69,10 +69,15 @@
         margin: 0 5px;
     }
 
+
     #courseList {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 1rem 0;
+    }
+
+    .section3 div p.credits {
+        grid-column: 1 / 4;
     }
 
     footer p {

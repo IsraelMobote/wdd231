@@ -126,6 +126,12 @@ body h2 {
     border: 2px solid black;
 }
 
+.section3 div p.credits {
+    background-color: blue;
+    margin-top: 1rem;
+}
+
+
 /*---------------------- footer ---------------------*/
 
 footer {

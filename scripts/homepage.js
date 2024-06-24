@@ -100,6 +100,17 @@ const courses = [
     }
 ]
 
+const creditAll = [2,2,2,2,2,2];
+const creditCSE = [2,2,2];
+const number = creditAll.reduce(myfun);
+const csenumber = creditCSE.reduce(myfun);
+let finalNum = number;
+    
+function myfun(total, numb) {
+    return total + numb;
+};
+
+
 const coursesDiv =  document.querySelector('#courseList');
 
 function getCourses(list) {
@@ -115,6 +126,12 @@ function getCourses(list) {
 
         coursesDiv.append(paragraph);
     });
+    const para =  document.createElement('p');
+    para.textContent = `Total Credits: ${finalNum}`;
+
+    para.classList.toggle("credits");
+
+    coursesDiv.append(para);
 }
 
 function getCSEcourses() {
@@ -135,6 +152,7 @@ let activeForCSE = 0;
 let activeForWDD = 0;
 
 document.querySelector('#onlyCSE').addEventListener('click', function() {
+    finalNum = csenumber;
     getCSEcourses();
 
     document.querySelector('#onlyCSE').classList.toggle('active');
@@ -153,6 +171,7 @@ document.querySelector('#onlyCSE').addEventListener('click', function() {
 
 
 document.querySelector('#onlyWDD').addEventListener('click', function() {
+    finalNum = csenumber;
     getWDDcourses();
 
     document.querySelector('#onlyWDD').classList.toggle('active');
@@ -170,6 +189,7 @@ document.querySelector('#onlyWDD').addEventListener('click', function() {
 });
 
 document.querySelector('#showAll').addEventListener('click', function() {
+    finalNum = number;
     getCourses(courses);
 
     document.querySelector('#showAll').classList.toggle('active');
