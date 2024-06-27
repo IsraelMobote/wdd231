@@ -28,7 +28,7 @@ async function getMembers(link) {
     
     if (data.ok) {
         const response = await data.json();
-        getBusinessesGrid(response)
+        getBusinessesList(response)
     }
     }
     catch (error) {
@@ -65,6 +65,52 @@ function getBusinessesGrid(membersList) {
         memberGrid.append(phoneNumber);
         memberGrid.append(websiteURL);
 
-        businessList.appendChild(memberGrid);
+        businessList.append(memberGrid);
+    });
+}
+
+function getBusinessesList(membersList) {
+
+    // I used this number to alternate the background colors of the members in the list by giving them
+    // different classes
+
+    businessList.classList.toggle('list');
+
+    let specialNumber = 0
+    businessList.innerHTML = '';
+    
+    membersList.forEach(member => {
+
+        specialNumber++;
+
+        const name = document.createElement('p');
+        name.textContent = member.name;
+
+        const address = document.createElement('p');
+        address.textContent = member.address;
+
+        const phoneNumber = document.createElement('p');
+        phoneNumber.textContent = member.phoneNumber;
+
+        const websiteURL = document.createElement('a');
+        websiteURL.setAttribute('href', member.website);
+        websiteURL.textContent = member.website;
+
+        const memberGrid = document.createElement('div');
+        
+
+        memberGrid.append(name);
+        memberGrid.append(address);
+        memberGrid.append(phoneNumber);
+        memberGrid.append(websiteURL);
+
+        if (specialNumber % 2 === 0) {
+            memberGrid.classList.toggle('evenList');
+        }
+        else {
+            memberGrid.classList.toggle('oddList');
+        }
+
+        businessList.append(memberGrid);
     });
 }

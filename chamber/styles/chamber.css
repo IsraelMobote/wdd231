@@ -67,6 +67,12 @@
     color: #FEFBF6;
     text-decoration: none;
 }
+/*-------------------Directory Page Main List Display--------------------*/
+
+
+
+
+
 
 /*-------------------Directory Page Main Grid Display--------------------*/
 
@@ -102,4 +108,42 @@ main #businessList div p {
 
 main #businessList div a {
     font-size: 0.9rem;
+}
+
+/*-------------------Directory Page Main List Display--------------------*/
+
+main #businessList.list {
+    max-width: 60rem;
+    padding: 2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+
+main #businessList div.evenList, main #businessList div.oddList {
+    padding: 1rem 2rem;
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ecb15971;
+}
+
+main #businessList div.evenList {
+    background-color: #fdf9f3ef;
+}
+
+main #businessList div p {
+    width: 200px;
+    font-size: 1rem;
+    padding: 2px 0;
+    text-align: start;
+    align-self: center;
+}
+
+main #businessList div a {
+    width: 200px;
+    align-self: center;
 }
