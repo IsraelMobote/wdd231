@@ -1,0 +1,68 @@
+[
+    {
+        "name" : "Seven-Up Bottling Company",
+        "address" : "247 Moshood Abiola Way, Ijora, Lagos, Nigeria",
+        "phoneNumber" : "+2348056900900",
+        "website" : "https://www.sevenup.org/",
+        "image" : "images/sevenUp-image.jpg",
+        "membership" : "1",
+        "founded-in" : "October, 1960"
+    },
+    {
+        "name" : "TVC Communications",
+        "address" : "1 Continental Way Off CMD Road, Ikosi-Ketu Lagos, Nigeria",
+        "phoneNumber" : "+234-708-066-8004",
+        "website" : "https://www.tvccommunications.tv/",
+        "image" : "images/tvc-image.jpg",
+        "membership" : "2",
+        "founded-in" : "2007"
+    },
+    {
+        "name" : "Dangote Cement",
+        "address" : "Leadway Marble House 1 Alfred Rewane Road, PMB 40032, Falomo Ikoyi, Lagos, Nigeria",
+        "phoneNumber" : "+234-1-460-643",
+        "website" : "https://dangotecement.com/",
+        "image" : "images/dangoteCement-image.jpg",
+        "membership" : "3",
+        "founded-in" : "1981"
+    },
+    {
+        "name" : "Lush Hair Africa",
+        "address" : "38 Eric Moore Road, Surulere, Lagos, Nigeria",
+        "phoneNumber" : "+2348095999000",
+        "website" : "https://lushhairafrica.com/",
+        "image" : "images/lushHair-image.jpg",
+        "membership" : "1",
+        "founded-in" : "2018"
+    },
+
+    {   
+        "name" : "Access Bank",
+        "address" : "14/15, Prince Alaba Abiodun Oniru Road, Victoria Island, Lagos, Lagos State, Nigeria",
+        "phoneNumber" : "+2347003000000",
+        "website" : "https://www.accessbankplc.com/",
+        "image" : "images/accessBank-image.jpg",
+        "membership" : "3",
+        "founded-in" : "February 1989"
+    },
+
+    {  
+        "name" : "Golden Penny Foods",
+        "address" : "1 Golden Penny Place, Wharf Road, Apapa, Lagos State, Nigeria",
+        "phoneNumber" : "+2347056892000",
+        "website" : "https://www.fmnfoods.com/",
+        "image" : "images/goldenPenny-image.jpg",
+        "membership" : "2",
+        "founded-in" : "September 1960"
+    },
+
+    {   
+        "name" : "Zenith Bank",
+        "address" : "Victoria Island, Lagos, Nigeria",
+        "phoneNumber" : "+234-1-2787000",
+        "website" : "https://www.zenithbank.com/",
+        "image" : "images/zenithBank-image.jpg",
+        "membership" : "3",
+        "founded-in" : "May 1990"
+    }
+]
