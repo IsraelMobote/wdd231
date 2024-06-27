@@ -68,3 +68,38 @@
     text-decoration: none;
 }
 
+/*-------------------Directory Page Main Grid Display--------------------*/
+
+main #businessList {
+    padding: 2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+main #businessList div {
+    padding: 10px 0;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    box-shadow: 0 0 8px 1px gray;
+}
+
+main #businessList div img {
+    width: 90%;
+    padding: 1rem 0; 
+}
+
+main #businessList div p {
+    font-size: 0.8rem;
+    width: 90%;
+    padding: 2px 0;
+    text-align: center;
+}
+
+main #businessList div a {
+    font-size: 0.9rem;
+}
