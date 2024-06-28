@@ -21,14 +21,14 @@ menu.addEventListener('click', function () {
 const businessList = document.querySelector('#businessList')
 
 const url = 'https://israelmobote.github.io/wdd231/chamber/data/members.json';
+let response;
 
 async function getMembers(link) {
     try {
     const data = await fetch(link);
     
     if (data.ok) {
-        const response = await data.json();
-        getBusinessesList(response)
+         response = await data.json();
     }
     }
     catch (error) {
@@ -40,7 +40,16 @@ getMembers(url);
 
 function getBusinessesGrid(membersList) {
 
+    if (checknumber === 1) {
+        businessList.classList.toggle('list');
+        checknumber = 0;
+    }
+
+     // I used the line of code below to make the business list empty for every click on the display buttons
+    // So that new values will be added and will not join with the old ones.
     businessList.innerHTML = '';
+
+
     membersList.forEach(member => {
         const image = document.createElement('img');
         image.setAttribute('src', member.image);
@@ -69,16 +78,25 @@ function getBusinessesGrid(membersList) {
     });
 }
 
+
 function getBusinessesList(membersList) {
+
+    if (checknumber === 0) {
+        businessList.classList.toggle('list');
+        checknumber = 1;
+    }
 
     // I used this number to alternate the background colors of the members in the list by giving them
     // different classes
-
-    businessList.classList.toggle('list');
-
     let specialNumber = 0
+
+    // I added the class 'list' to the business list so that I can style it differently from that of 
+    // grid
+
+    // I used the line of code below to make the business list empty for every click on the display buttons
+    // So that new values will be added and will not join with the old ones.
     businessList.innerHTML = '';
-    
+
     membersList.forEach(member => {
 
         specialNumber++;
@@ -114,3 +132,13 @@ function getBusinessesList(membersList) {
         businessList.append(memberGrid);
     });
 }
+
+let checknumber = 0;
+
+document.querySelector('#grid').addEventListener('click', function() {
+    getBusinessesGrid(response);
+});
+
+document.querySelector('#list').addEventListener('click', function() {
+    getBusinessesList(response);
+});
