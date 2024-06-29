@@ -3,6 +3,18 @@
     margin: 0;
 }
 
+h1, h2,h3 {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+  }
+
+a,p {
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 /*-------------------Directory Page Header--------------------*/
 .header {
     background-color: #8CB9BD;
