@@ -7,6 +7,9 @@
 .header {
     background-color: #8CB9BD;
     padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .header #logo {
@@ -35,7 +38,7 @@
     font-size: 3rem;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 4rem;
     color: #FEFBF6;
 }
 
@@ -46,15 +49,22 @@
 /*-------------------Directory Page Navigation--------------------*/
 
 #navi {
-    display: none;
+    display: grid;
+    grid-template-rows: 0fr;
 }
 
 #navi.show {
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s ease-out;
+    width: 100%;
+    position: fixed;
+    top: 82px;
 }
 
 #navi ul {
-    padding: 1rem 4rem;
+    overflow: hidden;
+    padding: 1rem;
     font-size: 1.4rem;
     background-color: #B67352;
 }
@@ -64,12 +74,14 @@
     padding: 5px 0;
 }
 #navi ul li a{
+    padding: 0.5rem;
     color: #FEFBF6;
     text-decoration: none;
 }
 /*-------------------Directory Page Main Section--------------------*/
 
 main section {
+    padding-top: 75px;
     padding-bottom: 2rem;
     border-bottom: 1px solid black;
 }
