@@ -35,7 +35,7 @@
         display: flex;
         max-width: 28rem;
         justify-content: space-between;
-        padding: auto 0;
+        padding: 1rem;
         background-color: #8CB9BD;
     }
 

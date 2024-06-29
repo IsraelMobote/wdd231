@@ -76,7 +76,7 @@ a,p {
 
 #navi ul {
     overflow: hidden;
-    padding: 1rem;
+    padding: 1rem 3rem;
     font-size: 1.4rem;
     background-color: #B67352;
 }
@@ -87,9 +87,12 @@ a,p {
 }
 
 #navi ul li a {
-    padding: 0.5rem;
+    padding: 0.7rem 0;
     color: #FEFBF6;
     text-decoration: none;
+}
+#navi ul li a:hover {
+    color: gold;
 }
 
 /*-------------------Directory Page Main Section--------------------*/
