@@ -1,54 +1,62 @@
-@media screen and (min-width: 48rem)
-    {
-        
-        .header #logo {
-            width: 40%;
-            display: flex;
-            justify-content: start;
-            height: 70px;
-        }
-        
-        .header #logo p {
-            font-size: 1.9rem;
-            padding-left: 7px;
-            align-self: center;
-        }
-        
-        .header #logo #smallFont {
-            font-size: 1.2rem;
-            max-width: 15rem;
-        }
-    
-.header #menuBar::before {
-   display: none;
-}
+@media screen and (min-width: 48rem) {
 
-#navi, #navi.show {
-    max-width: 28rem;
-    display: block;
-    position: fixed;
-    top: 0.4rem;
-    right: 1rem;
-}
-
-#navi ul{
-    display: flex;
-    max-width: 28rem;
-    justify-content: space-between;
-    padding: auto 0;
-    background-color: #8CB9BD;
-}
-
-#navi ul li a{
-    padding: 1rem;
-}
-#navi ul li a:hover {
-    font-size: 1.5rem;
-    color: #351404;
-    background-color: white;
-    border-radius: 10px;
-    padding: 0.5rem;
-}
-
-
+    .header #logo {
+        width: 40%;
+        display: flex;
+        justify-content: start;
+        height: 70px;
     }
+
+    .header #logo p {
+        font-size: 1.9rem;
+        padding-left: 7px;
+        align-self: center;
+    }
+
+    .header #logo #smallFont {
+        font-size: 1.2rem;
+        max-width: 15rem;
+    }
+
+    .header #menuBar::before {
+        display: none;
+    }
+
+    #navi,
+    #navi.show {
+        max-width: 28rem;
+        display: block;
+        position: fixed;
+        top: 0.4rem;
+        right: 1rem;
+    }
+
+    #navi ul {
+        display: flex;
+        max-width: 28rem;
+        justify-content: space-between;
+        padding: auto 0;
+        background-color: #8CB9BD;
+    }
+
+    #navi ul li a {
+        padding: 1rem;
+    }
+
+    #navi ul li a:hover {
+        font-size: 1.5rem;
+        color: #351404;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer div {
+        width: 30%;
+    }
+}

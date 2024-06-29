@@ -29,6 +29,7 @@ async function getMembers(link) {
     
     if (data.ok) {
          response = await data.json();
+         getBusinessesGrid(response);
     }
     }
     catch (error) {

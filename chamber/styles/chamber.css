@@ -69,22 +69,25 @@
     background-color: #B67352;
 }
 
-#navi ul li{
+#navi ul li {
     list-style-type: none;
     padding: 5px 0;
 }
-#navi ul li a{
+
+#navi ul li a {
     padding: 0.5rem;
     color: #FEFBF6;
     text-decoration: none;
 }
+
 /*-------------------Directory Page Main Section--------------------*/
 
 main section {
-    padding-top: 75px;
+    padding-top: 80px;
     padding-bottom: 2rem;
     border-bottom: 1px solid black;
 }
+
 main section h1 {
     text-align: center;
     color: #351404;
@@ -136,7 +139,7 @@ main #businessList div {
 
 main #businessList div img {
     width: 90%;
-    padding: 1rem 0; 
+    padding: 1rem 0;
 }
 
 main #businessList div p {
@@ -162,7 +165,8 @@ main #businessList.list {
 }
 
 
-main #businessList div.evenList, main #businessList div.oddList {
+main #businessList div.evenList,
+main #businessList div.oddList {
     padding: 1rem 2rem;
     display: flex;
     height: fit-content;
@@ -191,20 +195,19 @@ main #businessList div a {
 /*-------------------Directory Page footer--------------------*/
 
 footer {
-    padding: 1rem 0;
+    padding: 3rem 0;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
     background-color: #351404d5;
 }
 
-footer div p, footer div h3 {
+footer div p,
+footer div h3 {
     text-align: center;
     color: white;
 }
 
 #a {
-    text-align: center;
-    color: whitesmoke;
-    
+    color: white;
 }
