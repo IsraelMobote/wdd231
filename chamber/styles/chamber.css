@@ -221,7 +221,7 @@ footer {
 }
 
 footer div p,
-footer div h3 {
+footer div h2 {
     text-align: center;
     color: white;
 }
@@ -229,3 +229,74 @@ footer div h3 {
 #a {
     color: white;
 }
+
+/*--------------------- Home page styling -------------------*/
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 30rem;
+    margin-top: 60px;
+}
+
+/*--------------------- Home page main section1-------------------*/
+main .homepageSection1 {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main .homepageSection1 h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+main .homepageSection1 .homepageSection1Grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 50px;
+    margin-bottom: 2rem;
+}
+
+main .homepageSection1 .homepageSection1Grid div {
+    background-color: rgb(235, 221, 205);
+    
+}
+
+/*--------------------- Home page main section1 current weather div -------------------*/
+main .homepageSection1 .homepageSection1Grid div #current-weather {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.homepageSection1Grid div #current-weather p{
+    font-size: 0.8rem;
+    text-align: start;
+}
+
+.homepageSection1Grid div #current-weather p:first-child {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+/*--------------------- Home page main section1 weather forecast div -------------------*/
+.homepageSection1Grid div #weather-forecast {
+    padding: 20px 0;
+}
+
+.homepageSection1Grid div #weather-forecast p {
+    text-align: start;
+}
+
+.homepageSection1Grid div #weather-forecast span {
+    font-weight: 700;
+}
+
+/*--------------------- Home page main section1 h3 heading  -------------------*/
+main .homepageSection1 .homepageSection1Grid h3 {
+    text-align: center;
+    background-color: rgb(212, 185, 153);
+}
+
