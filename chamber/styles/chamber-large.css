@@ -29,6 +29,7 @@
         position: fixed;
         top: 0.4rem;
         right: 1rem;
+        z-index: 6;
     }
 
     #navi ul {
@@ -49,6 +50,18 @@
         background-color: white;
         border-radius: 10px;
         padding: 0.5rem;
+    }
+
+    .imagecontainer {
+        margin-top: 1.5rem;
+    }
+
+    .imagecontainer #action {
+        font-size: 2rem;
+    }
+
+    .imagecontainer a:hover {
+        font-size: 2.3rem;
     }
 
     footer {

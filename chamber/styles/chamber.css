@@ -28,6 +28,7 @@ p {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 5;
 }
 
 .header #logo {
@@ -78,6 +79,7 @@ p {
     width: 100%;
     position: fixed;
     top: 82px;
+    z-index: 5;
 }
 
 #navi ul {
@@ -235,11 +237,42 @@ footer div h2 {
 }
 
 /*--------------------- Home page styling -------------------*/
+main .hero {
+    position: relative;
+}
+
+.imagecontainer {
+    height: fit-content;
+}
+
 .hero img {
     width: 100%;
-    height: auto;
+    height: 50%;
     max-height: 30rem;
     margin-top: 60px;
+}
+
+.imagecontainer #action {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+    z-index: 4;
+}
+
+.imagecontainer a {
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    background-color: rgba(56, 15, 167, 0.63);
+}
+
+.imagecontainer a:hover {
+    font-size: 1.4rem;
 }
 
 /*--------------------- Home page main section1-------------------*/
@@ -265,6 +298,14 @@ main .homepageSection1 .homepageSection1Grid {
 main .homepageSection1 .homepageSection1Grid div {
     background-color: rgb(235, 221, 205);
 
+}
+
+.homepageSection1 .homepageSection1Grid div ul {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(22, 22, 126);
 }
 
 /*--------------------- Home page main section1 current weather div -------------------*/
