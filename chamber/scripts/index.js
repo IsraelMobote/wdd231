@@ -146,6 +146,8 @@ function displayWeatherForecast() {
 const url4 = 'https://israelmobote.github.io/wdd231/chamber/data/members.json';
 let randomIndexList = [];
 
+
+
 async function getSpotlightMembers(link) {
     try {
     const data = await fetch(link);
@@ -153,62 +155,74 @@ async function getSpotlightMembers(link) {
     if (data.ok) {
          const members = await data.json();
          const spotlightMembers = members.filter(member => member.membership > 1);
-            while(randomIndexList.length<2){
-                let Junk = false;
-                randomIndex = (Math.random()*(spotlightMembers.length-1)).toFixed();
-                console.log(randomIndex);
-                if (randomIndex in randomIndexList) {
-                    Junk = true;
-                }
-                if(Junk=false) {
-                randomIndexList.push(randomIndex);
-                }
-                console.log(randomIndexList);
+         while(randomIndexList.length<2){
+            let num = 0;
+            randomIndex = (Math.random()*(4)).toFixed();
+            console.log(randomIndex);
+            if (randomIndex == randomIndexList[0]) {
+                num = 1;
             }
+            if(num==0) {
+            randomIndexList.push(randomIndex);
+            }
+            console.log(randomIndexList);
         }
-        
+        displaySpotlightMembers(spotlightMembers);
+        }
     }
     catch (error) {
         console.log(error);
     }
 }
+
 getSpotlightMembers(url4);
-const membersSpotlight = document.querySelector('#membersSpotllight');
-function displaySpotlightMembers() {
-    function getBusinessesGrid(membersList) {
+const membersSpotlight = document.querySelector('#members');
 
-
-
-        // I used the line of code below to make the members spotlight div empty for every click on the display buttons
+function displaySpotlightMembers(list) {
+           // I used the line of code below to make the members spotlight div empty for every click on the display buttons
         // So that new values will be added and will not join with the old ones.
-        membersSpotlight.innerHTML = '';
+       
+    randomIndexList.forEach(index => {
+       let member = list[index];
 
 
-        membersList.forEach(member => {
+        const divi2 = document.createElement('div');
+
+        const address = document.createElement('p');
+        address.textContent = member.address;
+
+        const phoneNumber = document.createElement('p');
+        phoneNumber.textContent = member.phoneNumber;
+
+        const websiteURL = document.createElement('a');
+            websiteURL.setAttribute('href', member.website);
+            websiteURL.textContent = member.website;
+
+            divi2.append(address);
+            divi2.append(phoneNumber);
+            divi2.append(websiteURL);
+
+            const divi = document.createElement('div');
+
             const image = document.createElement('img');
             image.setAttribute('src', member.image);
             image.setAttribute('alt', `An image representing the logo of ${member.name}`);
             image.setAttribute('loading', 'lazy');
             image.setAttribute('width', 100);
-            image.setAttribute('height', 75);w
+            image.setAttribute('height', 100);
 
-            const address = document.createElement('p');
-            address.textContent = member.address;
+            divi.append(image);
+            divi.append(divi2);
 
-            const phoneNumber = document.createElement('p');
-            phoneNumber.textContent = member.phoneNumber;
+            const name = document.createElement('h3');
+            name.textContent = member.name;
 
-            const websiteURL = document.createElement('a');
-            websiteURL.setAttribute('href', member.website);
-            websiteURL.textContent = member.website;
+            const divmain = document.createElement('div')
+            divmain.append(name);
+            divmain.append(divi);
 
-            const memberGrid = document.createElement('div');
-            memberGrid.append(image);
-            memberGrid.append(address);
-            memberGrid.append(phoneNumber);
-            memberGrid.append(websiteURL);
+            membersSpotlight.append(divmain);
 
-            businessList.append(memberGrid);
-        });
-    }
+    });
 }
+

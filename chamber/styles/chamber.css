@@ -7,16 +7,19 @@
     margin: 0;
 }
 
-h1, h2,h3 {
+h1,
+h2,
+h3 {
     font-family: "Rubik", Arial, Helvetica, sans-serif;
-  }
+}
 
-a,p {
+a,
+p {
     font-family: "Merriweather", 'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 /*-------------------Directory Page Header--------------------*/
 .header {
@@ -94,6 +97,7 @@ a,p {
     color: #FEFBF6;
     text-decoration: none;
 }
+
 #navi ul li a:hover {
     color: gold;
 }
@@ -252,15 +256,15 @@ main .homepageSection1 h2 {
 
 main .homepageSection1 .homepageSection1Grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     padding: 0 50px;
     margin-bottom: 2rem;
 }
 
 main .homepageSection1 .homepageSection1Grid div {
     background-color: rgb(235, 221, 205);
-    
+
 }
 
 /*--------------------- Home page main section1 current weather div -------------------*/
@@ -268,12 +272,12 @@ main .homepageSection1 .homepageSection1Grid div #current-weather {
     padding: 20px 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
-
+    justify-items: center;
 }
 
-.homepageSection1Grid div #current-weather p{
+.homepageSection1Grid div #current-weather p {
     font-size: 0.8rem;
-    text-align: start;
+    text-align: center;
 }
 
 .homepageSection1Grid div #current-weather p:first-child {
@@ -287,7 +291,7 @@ main .homepageSection1 .homepageSection1Grid div #current-weather {
 }
 
 .homepageSection1Grid div #weather-forecast p {
-    text-align: start;
+    text-align: center;
 }
 
 .homepageSection1Grid div #weather-forecast span {
@@ -300,3 +304,53 @@ main .homepageSection1 .homepageSection1Grid h3 {
     background-color: rgb(212, 185, 153);
 }
 
+
+.homepageSection2 h2 {
+    text-align: center;
+}
+
+.homepageSection2 #members {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.homepageSection2 #members>div {
+    padding: 5px;
+    margin-bottom: 1rem;
+    max-width: 20rem;
+    background-color: rgb(211, 198, 198);
+    border-radius: 10px;
+    box-shadow: 0 0 12px 1px gray;
+}
+
+
+.homepageSection2 #members h3 {
+
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.homepageSection2 #members div p,
+.homepageSection2 #members div a {
+    color: black;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.homepageSection2 #members div div {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.homepageSection2 #members div div div {
+    display: grid;
+    grid-template-columns: 1fr;
+}

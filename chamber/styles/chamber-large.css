@@ -36,7 +36,7 @@
         max-width: 28rem;
         justify-content: space-between;
         padding: 1rem;
-        background-color:#075c64;
+        background-color: #075c64;
     }
 
     #navi ul li a {
@@ -58,5 +58,26 @@
 
     footer div {
         width: 30%;
+    }
+
+
+    main .homepageSection1 .homepageSection1Grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+    }
+
+
+    .homepageSection1Grid div #current-weather p {
+        text-align: start;
+    }
+
+    .homepageSection1Grid div #weather-forecast p {
+        text-align: start;
+    }
+
+    .homepageSection2 #members {
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
     }
 }
