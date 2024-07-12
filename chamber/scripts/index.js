@@ -130,11 +130,21 @@ function displayWeatherForecast() {
     const todayTemp = document.createElement('p');
     todayTemp.innerHTML = `Today: <span>${datatwo.list[0].main.temp}&deg;C</span>`;
 
+    
+    let nextday = now.getDay() + 1;
+    if (nextday>6) {
+        nextday -= 7;
+    }
+    let twodaysAfter = now.getDay() + 2;
+    if (twodaysAfter>6) {
+        twodaysAfter -= 7;
+    }
+
     const nextdayTemp = document.createElement('p');
-    nextdayTemp.innerHTML = `${daysOfWeek[now.getDay() + 1]}: <span>${datatwo.list[8].main.temp}&deg;C</span>`;
+    nextdayTemp.innerHTML = `${daysOfWeek[nextday]}: <span>${datatwo.list[8].main.temp}&deg;C</span>`;
 
     const twodaysAfterTemp = document.createElement('p');
-    twodaysAfterTemp.innerHTML = `${daysOfWeek[now.getDay() + 2]}: <span>${datatwo.list[16].main.temp}&deg;C</span>`;
+    twodaysAfterTemp.innerHTML = `${daysOfWeek[twodaysAfter]}: <span>${datatwo.list[16].main.temp}&deg;C</span>`;
 
     forecastSection.append(todayTemp);
     forecastSection.append(nextdayTemp);
