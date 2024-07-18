@@ -86,7 +86,7 @@ p {
     overflow: hidden;
     padding: 1rem 3rem;
     font-size: 1.4rem;
-    background-color: #B67352;
+    background-color: #b18d7b;
 }
 
 #navi ul li {
@@ -96,7 +96,7 @@ p {
 
 #navi ul li a {
     padding: 0.7rem 0;
-    color: #FEFBF6;
+    color: #14110c;
     text-decoration: none;
 }
 
@@ -411,8 +411,9 @@ main .homepageSection1 .homepageSection1Grid h3 {
     width: 90%;
     margin: 1rem auto;
     border-radius: 0 12px 0 12px;
-    animation: opacityrise 4s;
+    animation: opacityrise 3s;
 }
+
 
 #membershipCards div button {
     display: block;
@@ -442,7 +443,7 @@ main .homepageSection1 .homepageSection1Grid h3 {
     text-align: center;
     width: 80%;
     padding: 3rem 1rem;
-    color: rgb(197, 196, 182);
+    color: rgb(235, 234, 223);
     background-color: rgb(51, 59, 133);
     border: 2px solid navy;
     place-self: center;
@@ -465,16 +466,19 @@ main .homepageSection1 .homepageSection1Grid h3 {
 }
 .joinMain {
     margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
-.joinMain h1 {
+
+.joinMain h1, .thankyouMain h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
 form {
     background-color: rgba(145, 137, 199, 0.445);
     padding: 5% 5% 0 5%;
-    width: 90%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 300px;
     margin: 1rem auto 0;
     border: 1px solid black;
 }
@@ -547,4 +551,28 @@ input[type=submit] {
     border-radius: 8px;
     width: 80%;
     align-self: center;
+}
+
+/*------------ ThankYou HTML styling -------------*/
+#userInputs {
+    width: 60%;
+    max-width: 30rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: rgb(81, 151, 179);
+    border: 2px solid navy;
+}
+
+#userInputs p {
+    margin: 1rem 0;
+}
+
+#userInputs span {
+    font-weight: 800;
+}
+
+.thankyouMain {
+    margin-top: 10rem;
 }

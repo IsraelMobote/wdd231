@@ -30,36 +30,40 @@
         </div>
         <nav id="navi">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main class="joinMain">
-        <dialog id="dialog"></dialog>
-        <h1>Membership Application Form</h1>
-        <form class="joinForm" method="get" action="review.html">
-            <p class="indicator"> * means that the field is required</p>
-            <label>First Name<input type="text" name="firstname" autocomplete="on" required></label>
-            <label>Last Name<input type="text" name="lastname" autocomplete="on" required></label>
-            <label>Organizational Title<input type="text" name="organisational-title"
-                    autocomplete="organization-title"></label>
-            <label>Email<input type="email" name="email" placeholder="someone@gmail.com" autocomplete="on" required></label>
-            <label>mobile phone number<input type="tel" name="phonenumber" autocomplete="on" required></label>
-            <label>business/organizational's name<input type="text" name="businessname" autocomplete="organization" required></label>
-            <fieldset>
-                <legend>membership level</legend>
-                <div>(check all that apply)</div>
-                <label class="radio"><input type="radio" name="membership" value="NP">NP membership</label>
-                <label class="radio"><input type="radio" name="membership" value="Bronze">Bronze membership</label>
-                <label class="radio"><input type="radio" name="membership" value="Silver">Silver membership</label>
-                <label class="radio"><input type="radio" name="membership" value="Gold">Gold membership</label>
-            </fieldset>
-            <label>description<textarea name="review" id="review"></textarea></label>
-            <input type="submit" id="submit" name="submit" value="Join Today">
-        </form>
+        <section class="joinsection0">
+            <h1>Membership Application Form</h1>
+            <form class="joinForm" method="get" action="thankyou.html">
+                <p class="indicator"> * means that the field is required</p>
+                <label>First Name<input type="text" name="firstname" autocomplete="on" required></label>
+                <label>Last Name<input type="text" name="lastname" autocomplete="on" required></label>
+                <label>Organizational Title<input type="text" name="organisational-title"
+                        autocomplete="organization-title"></label>
+                <label>Email<input type="email" name="email" placeholder="someone@gmail.com" autocomplete="on"
+                        required></label>
+                <label>mobile phone number<input type="tel" name="phonenumber" autocomplete="on" required></label>
+                <label>business/organizational's name<input type="text" name="businessname" autocomplete="organization"
+                        required></label>
+                <fieldset>
+                    <legend>membership level</legend>
+                    <div>(check all that apply)</div>
+                    <label class="radio"><input type="radio" name="membership" value="NP">NP membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="Bronze">Bronze membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="Silver">Silver membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="Gold">Gold membership</label>
+                </fieldset>
+                <label>description<textarea name="review" id="review"></textarea></label>
+                <input type="submit" id="submit" name="submit" value="Join Today">
+            </form>
+            <dialog id="dialog"></dialog>
+        </section>
         <section class="joinsection1">
             <h1>Membership Levels</h1>
             <div id="membershipCards"></div>

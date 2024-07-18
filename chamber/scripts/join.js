@@ -1,3 +1,26 @@
+const year = document.querySelector("#currentYear");
+
+let lastModified = document.querySelector("#lastModified")
+
+const today = new Date();
+// this statement below is to get the current year in the footer
+year.innerHTML = today.getFullYear();
+
+// this statement is to get the last modified string in the footer
+lastModified.innerHTML = new Date(document.lastModified);
+
+
+const navi = document.querySelector('#navi');
+const menu = document.querySelector('#menuBar');
+
+menu.addEventListener('click', function () {
+    navi.classList.toggle("show");
+    menu.classList.toggle("show");
+})
+
+// get the element to animate
+
+
 const memberCards = document.querySelector('#membershipCards');
 
 const memberlevel = [
@@ -46,7 +69,7 @@ function displayCards() {
     });
 }
 
-displayCards();
+
 
 const dialog = document.querySelector('#dialog');
 
@@ -63,4 +86,41 @@ function displayModal(x) {
      myclose.addEventListener('click', () => {
         dialog.close()
      })
+}
+
+const element = document.querySelector('#membershipCards');
+let elementHeight = element.clientHeight;
+
+// listen for scroll event and call animate function
+document.addEventListener('scroll', animate);
+
+// check if element is in view
+function inView() {
+  // get window height
+  var windowHeight = window.innerHeight;
+  // get number of pixels that the document is scrolled
+  var scrollY = window.scrollY
+  
+  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+  var scrollPosition = scrollY + windowHeight;
+  // get element position (distance from the top of the page to the bottom of the element)
+  var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+  
+  // is scroll position greater than element position? (is element in view?)
+  if (scrollPosition > elementPosition) {
+    return true;
+  }
+  
+  return false;
+}
+
+let complete = false;
+
+// animate element when it is in view
+function animate() {
+  // is element in view?
+  if (inView() && complete===false) {
+      displayCards()
+      complete=true
+  }
 }

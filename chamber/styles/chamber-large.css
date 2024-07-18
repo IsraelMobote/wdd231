@@ -39,9 +39,10 @@
         padding: 1rem;
         background-color: #075c64;
     }
-
+    
     #navi ul li a {
         padding: 1rem;
+        color: #FEFBF6;
     }
 
     #navi ul li a:hover {
@@ -91,6 +92,16 @@
 
     .homepageSection2 #members {
         width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .joinMain {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
