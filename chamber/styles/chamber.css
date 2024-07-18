@@ -411,7 +411,7 @@ main .homepageSection1 .homepageSection1Grid h3 {
     width: 90%;
     margin: 1rem auto;
     border-radius: 0 12px 0 12px;
-    animation: opacityrise 3s;
+    animation: opacityrise 2s;
 }
 
 
