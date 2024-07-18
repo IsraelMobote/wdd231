@@ -12,6 +12,10 @@ a, p {
     font-family: 'Exo 2',Helvetica, sans-serif;
 }
 
+::backdrop {
+    background-color: rgba(245, 245, 220, 0.281);
+}
+
 
 header {
    display: flex;
@@ -76,12 +80,26 @@ body h2 {
 
 .section1 ul {
     padding: 0 4rem;
+    
 }
 
 /*---------------------- section two ---------------------*/
 
 .section2 {
     text-align: center;
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
 }
 
 /*---------------------- section three ---------------------*/

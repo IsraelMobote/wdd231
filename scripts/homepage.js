@@ -100,24 +100,25 @@ const courses = [
     }
 ]
 
-const creditAll = [2,2,2,2,2,2];
-const creditCSE = [2,2,2];
+const creditAll = [2, 2, 2, 2, 2, 2];
+const creditCSE = [2, 2, 2];
 const number = creditAll.reduce(myfun);
 const csenumber = creditCSE.reduce(myfun);
-    
+
 function myfun(total, numb) {
     return total + numb;
 };
 
 let finalNum = number;
 
-const coursesDiv =  document.querySelector('#courseList');
+const coursesDiv = document.querySelector('#courseList');
 
 function getCourses(list) {
 
     coursesDiv.innerHTML = '';
     list.forEach(course => {
-        const paragraph =  document.createElement('p');
+        const paragraph = document.createElement('p');
+        paragraph.addEventListener('click', () => displayModal(course))
         paragraph.textContent = `${course.subject} ${course.number}`;
 
         if (course.completed === false) {
@@ -126,7 +127,7 @@ function getCourses(list) {
 
         coursesDiv.append(paragraph);
     });
-    const para =  document.createElement('p');
+    const para = document.createElement('p');
     para.textContent = `Total Credits: ${finalNum}`;
 
     para.classList.toggle("credits");
@@ -151,7 +152,7 @@ let activeForAll = 0;
 let activeForCSE = 0;
 let activeForWDD = 0;
 
-document.querySelector('#onlyCSE').addEventListener('click', function() {
+document.querySelector('#onlyCSE').addEventListener('click', function () {
     finalNum = csenumber;
     getCSEcourses();
 
@@ -166,11 +167,11 @@ document.querySelector('#onlyCSE').addEventListener('click', function() {
         document.querySelector('#onlyWDD').classList.toggle('active');
         activeForWDD = 0;
     }
-    
+
 });
 
 
-document.querySelector('#onlyWDD').addEventListener('click', function() {
+document.querySelector('#onlyWDD').addEventListener('click', function () {
     finalNum = csenumber;
     getWDDcourses();
 
@@ -185,10 +186,10 @@ document.querySelector('#onlyWDD').addEventListener('click', function() {
         document.querySelector('#onlyCSE').classList.toggle('active');
         activeForCSE = 0;
     }
-    
+
 });
 
-document.querySelector('#showAll').addEventListener('click', function() {
+document.querySelector('#showAll').addEventListener('click', function () {
     finalNum = number;
     getCourses(courses);
 
@@ -206,3 +207,39 @@ document.querySelector('#showAll').addEventListener('click', function() {
 });
 
 getCourses(courses);
+const dialog = document.querySelector('#courseDetails')
+function displayModal(data) {
+    dialog.innerHTML = '';
+
+    const subjectandNumber = document.createElement('p')
+    subjectandNumber.textContent = `${data.subject} ${data.number}`
+
+    const title = document.createElement('p')
+    title.textContent = data.title
+
+    const credits = document.createElement('p')
+    credits.textContent = data.credits
+
+    const description = document.createElement('p')
+    description.textContent = data.description
+
+    const certificate = document.createElement('p')
+    certificate.textContent = data.certificate
+
+    dialog.append(subjectandNumber);
+    dialog.append(title);
+    dialog.append(credits);
+    dialog.append(description);
+    dialog.append(certificate);
+    dialog.showModal();
+
+    const myclose = document.createElement('button')
+    myclose.innerHTML = '✖';
+    dialog.append(myclose);
+
+    myclose.addEventListener('click', () => {
+        dialog.close();
+    })
+
+}
+

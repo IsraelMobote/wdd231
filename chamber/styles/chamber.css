@@ -395,3 +395,156 @@ main .homepageSection1 .homepageSection1Grid h3 {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+/*------------------------- Join Page Styling  --------------------------*/
+
+.joinsection1 h1 {
+    font-size: 2rem;
+    margin: 3rem 0 2rem;
+}
+
+
+#membershipCards div {
+    border: 2px solid rgba(219, 147, 14, 0.973);
+    background-color: rgba(228, 156, 24, 0.63);;
+    padding: 0.5rem;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 0 12px 0 12px;
+    animation: opacityrise 4s;
+}
+
+#membershipCards div button {
+    display: block;
+    margin: 0 auto;
+}
+
+::backdrop {
+    background-color: rgba(134, 130, 125, 0.719);
+}
+
+@keyframes opacityrise {
+    0% {
+        opacity: 0;
+        margin-top: 10rem;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 1rem;
+    }
+}
+
+#dialog {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    width: 80%;
+    padding: 3rem 1rem;
+    color: rgb(197, 196, 182);
+    background-color: rgb(51, 59, 133);
+    border: 2px solid navy;
+    place-self: center;
+}
+
+#dialog button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    font-size: 2rem;
+}
+
+#dialog p, #dialog h2 {
+    margin-top: 1rem;
+}
+
+#dialog .benefit {
+    margin-top: 0.2rem;
+}
+.joinMain {
+    margin-top: 10rem;
+}
+.joinMain h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+form {
+    background-color: rgba(145, 137, 199, 0.445);
+    padding: 5% 5% 0 5%;
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem auto 0;
+    border: 1px solid black;
+}
+
+
+.indicator {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgb(29, 17, 63);
+}
+
+label{
+
+    padding: 10px 10px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+input[type=checkbox] {
+    margin:  10px;
+}
+
+.radio {
+    display: block;
+}
+
+fieldset {
+    margin: 30px 0;
+}
+
+
+main input[type=radio] {
+  
+    margin-right: 1rem;
+    text-align: start;
+}
+
+legend {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+input[type=text], input[type=date], input[type=email], input[type=tel], select, textarea {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 5rem;
+    margin-bottom: 30px;
+}
+
+
+input[type=submit] {
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    align-self: center;
+}
