@@ -44,22 +44,22 @@
                 <p class="indicator"> * means that the field is required</p>
                 <label>First Name<input type="text" name="firstname" autocomplete="on" required></label>
                 <label>Last Name<input type="text" name="lastname" autocomplete="on" required></label>
-                <label>Organizational Title<input type="text" name="organisational-title"
+                <label>Organizational Title <span>(must be at least 7 characters)</span><input type="text" name="organisational-title" pattern="[a-zA-Z\- ]{7,}"
                         autocomplete="organization-title"></label>
                 <label>Email<input type="email" name="email" placeholder="someone@gmail.com" autocomplete="on"
                         required></label>
                 <label>mobile phone number<input type="tel" name="phonenumber" autocomplete="on" required></label>
-                <label>business/organizational's name<input type="text" name="businessname" autocomplete="organization"
-                        required></label>
+                <label>business name<input type="text" name="businessname" autocomplete="organization"
+                 required></label>
                 <fieldset>
-                    <legend>membership level</legend>
-                    <div>(check all that apply)</div>
+                    <legend>Membership level</legend>
                     <label class="radio"><input type="radio" name="membership" value="NP">NP membership</label>
                     <label class="radio"><input type="radio" name="membership" value="Bronze">Bronze membership</label>
                     <label class="radio"><input type="radio" name="membership" value="Silver">Silver membership</label>
                     <label class="radio"><input type="radio" name="membership" value="Gold">Gold membership</label>
                 </fieldset>
-                <label>description<textarea name="review" id="review"></textarea></label>
+                <label>business description<textarea name="review" id="review"></textarea></label>
+                <label>time-stamp<input type="hidden" name="time-stamp" id="timeStamp"></label>
                 <input type="submit" id="submit" name="submit" value="Join Today">
             </form>
             <dialog id="dialog"></dialog>

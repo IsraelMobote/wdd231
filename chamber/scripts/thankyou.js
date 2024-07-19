@@ -19,20 +19,27 @@ menu.addEventListener('click', function () {
 })
 
 const response = window.location.href;
-console.log(response);
 
 const everything = response.split('?');
-console.log(everything);
 
 const data = everything[1].split('&');
-console.log(data);
 
 function show(x) {
     let  val;
     data.forEach(element => {
         if(element.startsWith(x)) {
-            console.log(element);
             val = element.split('=')[1].replace('%40','@');
+        }
+    });
+    return val;
+}
+
+function getTimeStamp() {
+    let val;
+    data.forEach(element => {
+        if(element.startsWith('time')) {
+            val = element.split('+GMT')[0].replaceAll('%3A',':').replaceAll('+',' ')
+            val = val.split('=')[1]
         }
     });
     return val;
@@ -47,4 +54,4 @@ inputs.innerHTML = `
 <p>Email : <span>${show('email')}</span></p>
 <p>Phone Number : <span>${show('phone')}</span></p>
 <p>Organization : <span>${show('business')}</span></p>
-<p>Membership Level : <span>${show('membership')}</span></p>`
+<p>Current Date : <span>${getTimeStamp()}</span></p>`

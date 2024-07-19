@@ -18,7 +18,9 @@ menu.addEventListener('click', function () {
     menu.classList.toggle("show");
 })
 
-// get the element to animate
+
+let timeStamp = document.querySelector('#timeStamp');
+timeStamp.value = new Date(document.lastModified);
 
 
 const memberCards = document.querySelector('#membershipCards');
