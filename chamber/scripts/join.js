@@ -19,9 +19,8 @@ menu.addEventListener('click', function () {
 })
 
 
-let timeStamp = document.querySelector('#timeStamp');
-timeStamp.value = new Date(document.lastModified);
-
+const timeStamp = document.querySelector('#timeStamp');
+timeStamp.value =  `${today.toLocaleDateString()} ${today.toLocaleTimeString()}`;
 
 const memberCards = document.querySelector('#membershipCards');
 

@@ -38,14 +38,14 @@ function getTimeStamp() {
     let val;
     data.forEach(element => {
         if(element.startsWith('time')) {
-            val = element.split('+GMT')[0].replaceAll('%3A',':').replaceAll('+',' ')
+            val = element.replaceAll('%3A',':').replaceAll('+',' ').replaceAll('%2F','-')
             val = val.split('=')[1]
         }
     });
     return val;
 }
 
-const val = show('last');
+
 
 let inputs = document.querySelector('#userInputs');
 inputs.innerHTML = `
@@ -54,4 +54,4 @@ inputs.innerHTML = `
 <p>Email : <span>${show('email')}</span></p>
 <p>Phone Number : <span>${show('phone')}</span></p>
 <p>Organization : <span>${show('business')}</span></p>
-<p>Current Date : <span>${getTimeStamp()}</span></p>`
+<p>Current Date : <span>${getTimeStamp()}</span></p>`;
