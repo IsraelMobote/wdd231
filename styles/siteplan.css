@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #075c64;
+    margin-bottom: 4rem;
+}
+
+h1,
+h2 {
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-weight: 800;
+    background-color: rgba(255, 254, 254, 0.993);
+    color: rgb(71, 32, 9);
+    padding: 0.5rem 0.2rem;
+    margin: 3rem auto;
+    border-radius: 10px;
+    width: clamp(200px, 70%, 1000px);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#logo {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+#green {
+    color: rgb(67, 184, 13);
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(71, 32, 9);
+    width: clamp(200px, 60%, 1000px);
+    border-radius: 10px 10px 0 0;
+    margin: 3rem auto 0;
+}
+
+p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: rgba(255, 254, 254, 0.993);
+    padding: 0.8rem 0.5rem 0;
+    margin: 0 auto;
+    width: clamp(200px, 80%, 1000px);
+}
+
+table {
+    margin: 0 auto;
+    width: clamp(300px, 80%, 700px);
+
+}
+
+th {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 2px;
+    padding: 20px 0;
+    background-color: rgba(255, 254, 254, 0.993);
+    word-wrap: break-word;
+}
+
+
+.BackgroundColor {
+    background-color: white;
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.accentColor1 {
+    background-color: #075c64;
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.accentColor2 {
+    background-color: #351404d5;
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.Headings {
+    background-color: #351404;
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.Paragraphs {
+    background-color: black;
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+figure {
+    margin-top: 2rem;
+}
+
+figcaption {
+    width: 30%;
+    margin: 0 auto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: black;
+    background-color: rgba(255, 254, 254, 0.993)
+}
+
+img {
+    width: 80%;
+}
