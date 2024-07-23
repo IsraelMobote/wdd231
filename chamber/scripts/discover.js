@@ -21,7 +21,6 @@ menu.addEventListener('click', function () {
 let condition = 0;
 const businessList = document.querySelector('#businessList');
 
-localStorage.clear();
 
 let numOfDays;
 
@@ -87,7 +86,6 @@ localStorage.setItem('previousHour', currentHour);
 
 
 function displayMessage(state) {
-    console.log(condition);
     if (state == 0) {
         span.textContent = 'Welcome! Let us know if you have any questions';
     }
