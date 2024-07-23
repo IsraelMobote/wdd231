@@ -276,18 +276,18 @@ main .hero {
 }
 
 /*--------------------- Home page main section1-------------------*/
-main .homepageSection1 {
+main .infoCardSection {
     max-width: 65rem;
     margin: 0 auto;
     padding: 0;
 }
 
-main .homepageSection1 h2 {
+main .infoCardSection h2 {
     text-align: center;
     padding: 20px;
 }
 
-main .homepageSection1 .homepageSection1Grid {
+main .infoCardSection .homepageSection1Grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -295,12 +295,12 @@ main .homepageSection1 .homepageSection1Grid {
     margin-bottom: 2rem;
 }
 
-main .homepageSection1 .homepageSection1Grid div {
+main .infoCardSection .homepageSection1Grid div {
     background-color: rgb(235, 221, 205);
 
 }
 
-.homepageSection1 .homepageSection1Grid div ul {
+.infoCardSection div ul {
     padding: 1rem 0;
     font-size: 1.3rem;
     width: 80%;
@@ -309,7 +309,7 @@ main .homepageSection1 .homepageSection1Grid div {
 }
 
 /*--------------------- Home page main section1 current weather div -------------------*/
-main .homepageSection1 .homepageSection1Grid div #current-weather {
+main .infoCardSection div #current-weather {
     padding: 20px 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -327,11 +327,11 @@ main .homepageSection1 .homepageSection1Grid div #current-weather {
 }
 
 /*--------------------- Home page main section1 weather forecast div -------------------*/
-.homepageSection1Grid div #weather-forecast {
+.homepageSection1Grid div .infoCard {
     padding: 20px 0;
 }
 
-.homepageSection1Grid div #weather-forecast p {
+.homepageSection1Grid div .infoCard p {
     text-align: center;
 }
 
@@ -340,7 +340,7 @@ main .homepageSection1 .homepageSection1Grid div #current-weather {
 }
 
 /*--------------------- Home page main section1 h3 heading  -------------------*/
-main .homepageSection1 .homepageSection1Grid h3 {
+main .infoCardSection .homepageSection1Grid h3 {
     text-align: center;
     background-color: rgb(212, 185, 153);
 }
@@ -406,7 +406,8 @@ main .homepageSection1 .homepageSection1Grid h3 {
 
 #membershipCards div {
     border: 2px solid rgba(219, 147, 14, 0.973);
-    background-color: rgba(228, 156, 24, 0.63);;
+    background-color: rgba(228, 156, 24, 0.63);
+    ;
     padding: 0.5rem;
     width: 90%;
     margin: 1rem auto;
@@ -457,23 +458,27 @@ main .homepageSection1 .homepageSection1Grid h3 {
     font-size: 2rem;
 }
 
-#dialog p, #dialog h2 {
+#dialog p,
+#dialog h2 {
     margin-top: 1rem;
 }
 
 #dialog .benefit {
     margin-top: 0.2rem;
 }
+
 .joinMain {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.joinMain h1, .thankyouMain h1 {
+.joinMain h1,
+.thankyouMain h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 form {
     background-color: rgba(145, 137, 199, 0.445);
     padding: 5% 5% 0 5%;
@@ -496,7 +501,7 @@ label span {
     color: rgb(29, 17, 63);
 }
 
-label{
+label {
 
     padding: 10px 10px;
     color: black;
@@ -506,7 +511,7 @@ label{
 
 
 input[type=checkbox] {
-    margin:  10px;
+    margin: 10px;
 }
 
 .radio {
@@ -519,7 +524,7 @@ fieldset {
 
 
 main input[type=radio] {
-  
+
     margin-right: 1rem;
     text-align: start;
 }
@@ -530,7 +535,12 @@ legend {
     font-weight: 800;
 }
 
-input[type=text], input[type=date], input[type=email], input[type=tel], select, textarea {
+input[type=text],
+input[type=date],
+input[type=email],
+input[type=tel],
+select,
+textarea {
     display: block;
     padding: 10px;
     width: 80%;
@@ -538,7 +548,9 @@ input[type=text], input[type=date], input[type=email], input[type=tel], select, 
     font-size: 1rem;
 }
 
-input[type=text], input[type=email], input[type=tel] {
+input[type=text],
+input[type=email],
+input[type=tel] {
     margin-bottom: 1rem;
 }
 
@@ -579,4 +591,68 @@ input[type=submit] {
 
 .thankyouMain {
     margin-top: 10rem;
+}
+
+
+
+main .infoCardSection #info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+main .infoCardSection span {
+    font-weight: 800;
+}
+
+/*----------------- Discover Page Styling ----------------*/
+
+#discoverMain {
+    padding-top: 5rem;
+}
+
+#discoverMain h2 {
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+#calendar div {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#calendar h3 {
+    font-size: 2rem;
+    padding: 11px;
+}
+
+.discoverGrid h2 {
+    margin: 1rem 0;
+    background-color: rgb(20, 28, 51);
+    color: white;
+}
+
+#discoverMain figure {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#discoverMain figcaption {
+    font-size: 1.3rem;
+}
+
+.discoverGrid #info {
+    padding: 0 0.5rem;
+}
+
+#imagesSection img {
+    width: 95%;
+    max-height: 15rem;
+    margin: 0 0.5rem;
+}
+
+.discoverGrid span {
+    padding: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Page | Chamber of Commerce</title>
+    <meta name="author" content="Israel Silas Mobote">
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://israelmobote.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://israelmobote.github.io/wdd231/chamber/chamberOfCommercePic.jpg">
+    <meta property="og:description" content="a platform for navigating the business scope of lagos, Nigeria">
+    <meta name="description" content="Chamber of Commerce | Discover Page | Israel Mobote">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div id="logo">
+                <img src="images/header-logo.png" alt="A mansion or a house logo" width="50" height="50">
+                <p>Lagos</p>
+                <p id="smallFont">Chamber of Commerce</p>
+            </div>
+            <p id="menuBar"></p>
+        </div>
+        <nav id="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="discoverMain">
+        <section class="infoCardSection discoverGrid">
+            <h2>Discover about Lagos <span></span></h2>
+            <div class="homepageSection1Grid" id="info">
+                <div>
+                    <h3>Events</h3>
+                    <ul>
+                        <li>Event marking 5 year aniversary of the chamber on Aug 2</li>
+                        <li>New member welcome party on Aug 22</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Weather Forecast</h3>
+                    <div class="infoCard">
+                        <p>Area: <span>3,475 km²</span></p>
+                        <p>Population: <span>9,013,534</span></p>
+                        <p>Founded: <span>27 May 1967</span></p>
+                        <p>Capital: <span>Ikeja</span></p>
+                        <p>ISO 3166 code: <span>NG-LA</span></p>
+                        <p>Geopolitical Zone: <span>South West</span></p>
+                    </div>
+                </div>
+                <div id="calendar">
+                    <h3>Calendar</h3>
+                    <div>
+                        <iframe 
+                            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=UTC&bgcolor=%23039BE5&showTitle=0&src=bW9ib3RlaXNyYWVsMDJAZ21haWwuY29t&color=%23039BE5"
+                            style="border:solid 1px #777" width="300" height="200" frameborder="0"
+                            scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h3>Tourist Attractions in Lagos</h3>
+                    <figure>
+                        <img src="images/lekki-conservation-center.jpg" alt="picture of lekki conservation center" width="300" height="200" loading="lazy">
+                        <figcaption>Lekki Conservation Center</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/national-theatre-in-lagos.jpg" alt="picture of the national theatre in lagos" width="300" height="200" loading="lazy">
+                        <figcaption>National Theatre</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="imagesSection">
+                <figure>
+                    <img src="images/motto-of-lagos.jpg" alt="picture of the motto of Lagos" loading="lazy">
+                    <figcaption>Motto Of Lagos</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/freedom-park-lagos.jpg" alt="picture of freedom park in lagos" loading="lazy">
+                    <figcaption>Freedom Park, Lagos</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/tall-buildings-in-lagos.jpg" alt="picture of tall buildings in lagos" loading="lazy">
+                    <figcaption>Lagos Buildings</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nighttime-in-lagos.jpg" alt="picture of nighttime in lagos" loading="lazy">
+                    <figcaption>nighttime in Lagos</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/traffic-in-lagos.jpg" alt="picture of traffic in Lagos" loading="lazy">
+                    <figcaption>traffic in Lagos</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/highway-in-lagos.jpg" alt="picture of highway in Lagos" loading="lazy">
+                    <figcaption>highway in Lagos</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h2>Lagos Chamber of Commerce</h2>
+            <p>finixsolutions02@gmail.com</p>
+            <p>+234-90-1301-1075</p>
+            <p>
+                <a id="a" href="https://www.flaticon.com/free-icons/chamber" title="chamber icons">Chamber icons created
+                    by
+                    smashingstocks - Flaticon</a>
+            </p>
+        </div>
+
+        <div class="socialMediaIcons"></div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Israel Silas Mobote</p>
+            <p>©<span id="currentYear"></span> Lagos Chamber of Commerce</p>
+            <p>Last Modification : <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
