@@ -21,18 +21,18 @@ menu.addEventListener('click', function () {
 let condition = 0;
 const businessList = document.querySelector('#businessList');
 
-
-let previousDay = localStorage.getItem('previousDay');
-const previousHour = localStorage.getItem('previousHour');
-
+localStorage.clear();
 
 let numOfDays;
 
 let currentHour = today.getHours();
 let currentDay = today.getDay();
 
-console.log(previousDay);
-console.log(currentDay);
+let previousDay = localStorage.getItem('previousDay');
+let previousHour = localStorage.getItem('previousHour');
+
+
+
 
 if (previousDay >= 0) {
     if (currentDay < previousDay) {
@@ -73,6 +73,10 @@ if (previousDay >= 0) {
 
 if (currentDay == previousDay) {
     condition = 1
+}
+
+if ( previousDay == null) {
+    condition = 0
 }
 
 const span = document.querySelector('.discoverGrid h2 span');
