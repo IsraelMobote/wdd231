@@ -25,7 +25,7 @@ const businessList = document.querySelector('#businessList');
 let numOfDays;
 
 let currentHour = today.getHours();
-let currentDay = today.getDay();
+let currentDay = today.getDate();
 
 let previousDay = localStorage.getItem('previousDay');
 let previousHour = localStorage.getItem('previousHour');
@@ -34,23 +34,6 @@ let previousHour = localStorage.getItem('previousHour');
 
 
 if (previousDay >= 0) {
-    if (currentDay < previousDay) {
-        number = previousDay - currentDay;
-        if (number < 6) {
-            condition = 2
-            numOfDays = 7 - number
-        }
-        else if (number == 6) {
-            if (currentHour > previousHour) {
-                condition = 2
-                numOfDays = 1
-            }
-            else if (currentHour < previousHour) {
-                condition = 1
-            }
-
-        }
-    }
 
     if (currentDay > previousDay) {
         number = currentDay - previousDay
