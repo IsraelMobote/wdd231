@@ -44,10 +44,10 @@ function displayModal(x) {
     <h2>Benefits</h2>
     <p class='benefit' >${x.description}</p>`
 
-     const myclose = document.querySelector('#dialog button')
-     myclose.addEventListener('click', () => {
+    const myclose = document.querySelector('#dialog button')
+    myclose.addEventListener('click', () => {
         dialog.close()
-     })
+    })
 }
 
 

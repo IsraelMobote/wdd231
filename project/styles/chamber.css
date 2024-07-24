@@ -107,14 +107,16 @@ main {
     padding-top: 7rem;
 }
 
-main h1  {
+main h1 {
     font-size: 3rem;
     text-align: center;
     color: #351404;
 }
+
 p {
     color: black;
 }
+
 main p {
     text-align: center;
     padding: 3rem;
@@ -124,6 +126,7 @@ main p {
 .aboutImages {
     text-align: center;
 }
+
 .aboutImages img {
     width: 90%;
     height: 20rem;
@@ -133,7 +136,7 @@ main p {
 
 #ourDetails h2 {
     font-size: 1.5rem;
-    background-color:  #351404;
+    background-color: #351404;
     margin: 4rem auto 0;
     color: white;
     padding: 1rem;
@@ -183,6 +186,7 @@ main p {
 #dialog p,
 #dialog h2 {
     margin-top: 1rem;
+    color: white;
 }
 
 #dialog .benefit {
@@ -205,6 +209,6 @@ footer div h2 {
     color: white;
 }
 
-#a {
+footer a {
     color: white;
 }
