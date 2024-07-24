@@ -611,6 +611,12 @@ main .infoCardSection span {
     padding-top: 5rem;
 }
 
+#discoverMain h1 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
 #discoverMain h2 {
     font-size: 2rem;
     padding: 3rem;
