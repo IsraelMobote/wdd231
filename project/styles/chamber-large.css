@@ -61,4 +61,13 @@
     footer div {
         width: 30%;
     }
+
+    main div {
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+        justify-items: center;
+        text-align: center;
+    }
 }
