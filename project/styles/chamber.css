@@ -156,6 +156,39 @@ main p {
     font-size: 1.3rem;
     font-weight: 800;
 }
+
+/*-------------------Dialog styling--------------------*/
+
+#dialog {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    width: 80%;
+    padding: 3rem 1rem;
+    color: rgb(235, 234, 223);
+    background-color: rgb(51, 59, 133);
+    border: 2px solid navy;
+    place-self: center;
+}
+
+#dialog button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    font-size: 2rem;
+}
+
+#dialog p,
+#dialog h2 {
+    margin-top: 1rem;
+}
+
+#dialog .benefit {
+    margin-top: 0.2rem;
+}
+
 /*-------------------Directory Page footer--------------------*/
 
 footer {

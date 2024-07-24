@@ -20,21 +20,19 @@ menu.addEventListener('click', function () {
 
 const businessList = document.querySelector('#businessList')
 
-const url = 'https://israelmobote.github.io/wdd231/chamber/data/members.json';
+const url = 'https://israelmobote.github.io/wdd231/project/data/aboutdata.json';
 let response;
-
-const url2 = 'https://api.openweathermap.org/data/2.5/weather?lat=6.53&lon=3.37&units=metric&appid=3707d031b693ba1a997378fffcf8b394';
-
 
 const dialog = document.querySelector('#dialog');
 
 
 document.querySelector('#button1').addEventListener('click', () => {
+    displayModal(response[0]);
     dialog.showModal();
 });
 
-
 document.querySelector('#button2').addEventListener('click', () => {
+    displayModal(response[1]);
     dialog.showModal();
 });
 
@@ -51,6 +49,7 @@ function displayModal(x) {
         dialog.close()
      })
 }
+
 
 async function getMembers(link) {
     try {
