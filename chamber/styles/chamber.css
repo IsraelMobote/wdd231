@@ -616,16 +616,6 @@ main .infoCardSection span {
     padding: 3rem;
 }
 
-#calendar div {
-    padding: 1rem 0;
-    text-align: center;
-}
-
-#calendar h3 {
-    font-size: 2rem;
-    padding: 11px;
-}
-
 .discoverGrid h2 {
     margin: 1rem 0;
     background-color: rgb(20, 28, 51);
@@ -633,6 +623,7 @@ main .infoCardSection span {
 }
 
 #discoverMain figure {
+    padding: 2rem 0;
     margin: 1rem auto;
     text-align: center;
 }
