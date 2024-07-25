@@ -13,7 +13,7 @@ document.querySelector("#dropStudent").addEventListener("click", function () {
 aCourse.init();
 
 
-const url = 'https://api.thedogapi.com/v1/breeds';
+
 const url1 = '';
 
 

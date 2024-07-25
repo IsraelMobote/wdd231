@@ -70,4 +70,14 @@
         justify-items: center;
         text-align: center;
     }
+.randomImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+form {
+    width: 90%;
+    max-width: 400px;
+}
+
 }

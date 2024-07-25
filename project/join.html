@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page | DogCoPedia</title>
     <meta name="author" content="Israel Silas Mobote">
-    <meta property="og:title" content="DogCoPedia website">
+    <meta property="og:title" content="DogCoPedia">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://israelmobote.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://israelmobote.github.io/wdd231/chamber/chamberOfCommercePic.jpg">
+    <meta property="og:url" content="https://israelmobote.github.io/wdd231/project/index.html">
     <meta property="og:description" content="a platform for navigating the business scope of lagos, Nigeria">
-    <meta name="description" content="DogCoPedia | Home Page | Israel Mobote">
+    <meta name="description" content="Chamber of Commerce | DogCoPedia Index Page | Israel Mobote">
     <link rel="icon" href="images/paww.png">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
-    <script src="scripts/index.js" type="module" defer></script>
+    <script src="scripts/about.js" defer></script>
 </head>
 
 <body>
@@ -35,43 +35,29 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>DogCoPedia</h1>
-        <p>We Know how passionate you are about your pets, especially those of you, Dog lovers. So we want to
-            help you know more about this wonderful friend of man. At DogCoPedia, we provide you with a wide range of
-            dog images
-            and information that will help pet owners know more about their dogs and also intending owners find the
-            Dog breed that is right for them.
+    <main id="joinMain">
+        <h1>Join Our Community Today!</h1>
+        <p> Want to know more about dogs and communicate with other pet owners? . Join Our community today and get 
+            access to these opportunities and alot more features. Plus it's always good to meet and know individuals who are 
+            interested in taking care of dogs. There are alot of tips and ideas you could catch along the way.
         </p>
-        <div class="breedfilter">
-            <h2>Breed Filter</h2>
-            <p>Find your desired Dog breed</p>
-            <form>
-                <label>Breed List *
-                    <select name="breedName" id="breedName" required>
-                        <option value="" disabled selected>Choose a Breed ....</option>
-                    </select>
-                </label>
-                <span>Get Breed</span>
-            </form>
+        <div class="aboutImages">
+            <img src="images/join-image1.webp" alt="picture of two individuals smiling with a dog in the middle" loading="lazy">
+            <img src="images/join-image2.webp" alt="picture of a family smiling with numerous dogs with them"
+                loading="lazy">
         </div>
-        <div class="breedfilter" id="doginfo">
-            <h2></h2>
-            <p id="bredfor"></p>
-             <p id="origin"></p>
-             <p id="lifespan"></p>
-             <p id="temperament"></p>
-             <p id="breedgroup"></p>
-        </div>
-        <section class="random">
-            <h2>Random Dogs Display</h2>
-            <div class="randomImages"></div>
-        </section>
-       
         <dialog id="dialog">
         </dialog>
-        
-
+        <h2>Please fill the form to join our community today</h2>
+        <form class="joinForm" method="get" action="thankyou.html">
+            <p class="indicator"> * means that the field is required</p>
+            <label>First Name<input type="text" name="firstname" autocomplete="on" required></label>
+            <label>Last Name<input type="text" name="lastname" autocomplete="on" required></label>
+            <label>Email<input type="email" name="email" placeholder="someone@gmail.com" autocomplete="on"
+                    required></label>
+            <label>mobile phone number<input type="tel" name="phonenumber" autocomplete="on" required></label>
+            <input type="submit" id="submit" name="submit" value="Join Today">
+        </form>
     </main>
     <footer>
         <div>
